@@ -1,0 +1,9 @@
+BUILD: 
+module load cuda
+make
+TEST:
+cpu mode:
+./darwin-gpu data/escherichia_coli.fa data/reads1.fa 3 0 > out.maf
+gpu mode:
+./darwin-gpu data/escherichia_coli.fa data/reads1.fa 2 0 > out.maf
+
